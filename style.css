@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body{
+    background-image: linear-gradient(to right, rgb(255, 112, 69), rgb(226, 0, 226));
+    font-family: Poppins;
+  }
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.navItems{
+    background-color: rgb(255, 222, 6);
+    width: 15vw;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.navItems p{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.mainContent{
+    display: flex;
+    margin: 0 auto;
+    width: 80vw;
+    margin-top: 30px;
+}
+
+.mainImage{
+    position: relative;
+}
+
+.mainImage img{
+    width: 750px;
+}
+
+.price{
+    background-color: rgb(255, 222, 6);
+}
+
+.firstTextImage, .secondTextImage{
+    background-color: rgb(255, 222, 6);
+    padding: 5px;
+    position: absolute;
+}
+
+.firstTextImage{
+    left: 10%;
+    top: 40%;
+}
+
+.secondTextImage{
+    left: 10%;
+    top: 55%;
+}
+
+.foodPrice{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price{
+    width: 30vw;
+    height: 34vh;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.price h1{
+  font-size: 60px;
+}
+
+.price h5{
+  font-size: 20px;
+}
+
+.restaurantItems{
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.item img{
+  width: 100px;
+}
+
+.item{
+  background-image: url(images/topography.svg);
+  width: 19vw;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.presentation{
+  display: flex;
+  background-color: white;
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.infosTaco h1{
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.learnMore{
+  background-color: rgb(255, 222, 6);
+  border: 1px solid rgb(255, 222, 6);
+  width: 150px;
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.gridPhotos{
+  text-align: center;
+  margin-top: 30px;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.instantGrams{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.firstGradient, .secondGradient{
+  width: 550px;
+  height: 10px;
+}
+
+.firstGradient{
+  background-image: linear-gradient(to right, rgba(246, 255, 0, 0.219), rgb(246, 255, 0));
+}
+
+.secondGradient{
+  background-image: linear-gradient(to right, rgb(246, 255, 0),  rgba(246, 255, 0, 0.219));
+}
+
+.gridImages{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  margin: 30px;
+}
+
+@media (max-width: 1000px){
+  .navItems p{
+    font-size: 15px;
+  }
+  .price{
+    width: 20vw;
+    height: 27vh;
+  }
+  .price h1{
+    font-size: 40px;
+  }
+  .price h5{
+    font-size: 20px;
+  }
+}
